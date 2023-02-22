@@ -4,6 +4,7 @@
 
 #include <iostream>
 
+#include <utils/glutils.h>
 
 void processInput(GLFWwindow* window);
 void framebuffer_size_call_back(GLFWwindow* window,int width,int height);
@@ -30,7 +31,7 @@ int main(){
     while(!glfwWindowShouldClose(window)){      
         processInput(window);
 
-        glClearColor(1,1,1,1);
+        CHECK_GL(glClearColor(1,1,1,1));
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);

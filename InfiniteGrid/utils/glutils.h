@@ -37,4 +37,4 @@ static void _check_opengl_error(const char* file,int line, const char *hint){
     do {                                           \
         (x);                                       \
         _check_opengl_error(__FILE__,__LINE__,#x); \
-    }while(0);                                     
+    }while(0)                                     
