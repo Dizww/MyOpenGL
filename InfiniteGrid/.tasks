@@ -1,0 +1,3 @@
+[+]
+ build_target=InfiniteGrid
+ run_target="$(VIM:build_dir)/bin/$(VIM:build_target)"
