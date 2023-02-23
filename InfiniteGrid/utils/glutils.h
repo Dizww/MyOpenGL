@@ -1,7 +1,9 @@
 #pragma once
 
-#include <glad/gl.h>
+#include <iostream>
 #include <stdio.h>
+
+#include <glad/gl.h>
 
 static const char* get_opengl_error_string(GLenum err){
     switch (err){
